@@ -45,6 +45,8 @@
 		5AEC4169161FFE460095F371 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		5AEC416B161FFE460095F371 /* QuickGo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuickGo-Prefix.pch"; sourceTree = "<group>"; };
 		5AF95FD41622A4880068611A /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		5AF95FDA1622EB980068611A /* Install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Install.sh; sourceTree = "<group>"; };
+		5AF95FDB1622EE720068611A /* Uninstall.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Uninstall.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,8 @@
 				5AEC4161161FFE460095F371 /* QuickGo-Info.plist */,
 				5AEC4162161FFE460095F371 /* InfoPlist.strings */,
 				5AEC416B161FFE460095F371 /* QuickGo-Prefix.pch */,
+				5AF95FDA1622EB980068611A /* Install.sh */,
+				5AF95FDB1622EE720068611A /* Uninstall.sh */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
