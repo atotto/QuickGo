@@ -44,6 +44,15 @@ You can download a binary release from: <https://github.com/atotto/QuickGo/downl
 
 ![QuickLook](http://farm9.staticflickr.com/8319/8066711459_07f2cc17d2.jpg "QuickLook")
 
+## Customize syntax highlighting ##
+
+You can change the syntax highlighting on `~/Library/QuickLook/Contents/Resources/style.css`. 
+
+0. Go to the `~/Library/QuickLook/` directory.
+0. Select `Show Package Contents` from context menu on `QuickGo.qlgenerator`.
+0. Go to `Contents/Resources`.
+0. You can find the `style.css`, customize it!
+
 
 ## License ##
 
