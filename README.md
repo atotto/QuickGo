@@ -1,8 +1,8 @@
-#QuickGo#
+# QuickGo #
 
-##Intoroduction##
+## Introduction ##
 
-This is QuickLook Plugin for golang. You can get a go source code using QuickLook.
+This is QuickLook Plug-in for golang. You can get a go source code using QuickLook.
 
 QuickLook description is here: 
 
