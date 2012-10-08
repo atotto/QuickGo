@@ -1,6 +1,7 @@
 #include <CoreFoundation/CoreFoundation.h>
 #include <CoreServices/CoreServices.h>
 #include <QuickLook/QuickLook.h>
+#import  <Foundation/Foundation.h>
 
 OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thumbnail, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options, CGSize maxSize);
 void CancelThumbnailGeneration(void *thisInterface, QLThumbnailRequestRef thumbnail);
@@ -14,6 +15,10 @@ void CancelThumbnailGeneration(void *thisInterface, QLThumbnailRequestRef thumbn
 OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thumbnail, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options, CGSize maxSize)
 {
     // To complete your generator please implement the function GenerateThumbnailForURL in GenerateThumbnailForURL.c
+    @autoreleasepool {
+        
+        
+    }
     return noErr;
 }
 

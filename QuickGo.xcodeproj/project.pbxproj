@@ -12,10 +12,25 @@
 		5AEC415C161FFE460095F371 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEC415B161FFE460095F371 /* CoreServices.framework */; };
 		5AEC415E161FFE460095F371 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEC415D161FFE460095F371 /* CoreFoundation.framework */; };
 		5AEC4164161FFE460095F371 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AEC4162161FFE460095F371 /* InfoPlist.strings */; };
-		5AEC4166161FFE460095F371 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC4165161FFE460095F371 /* GenerateThumbnailForURL.c */; };
-		5AEC4168161FFE460095F371 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC4167161FFE460095F371 /* GeneratePreviewForURL.c */; };
+		5AEC4166161FFE460095F371 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC4165161FFE460095F371 /* GenerateThumbnailForURL.m */; };
+		5AEC4168161FFE460095F371 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC4167161FFE460095F371 /* GeneratePreviewForURL.m */; };
 		5AEC416A161FFE460095F371 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC4169161FFE460095F371 /* main.c */; };
+		5AF95FCD162104B30068611A /* QuickGo.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5AEC4154161FFE460095F371 /* QuickGo.qlgenerator */; };
+		5AF95FD51622A4880068611A /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 5AF95FD41622A4880068611A /* style.css */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5AF95FCC1621049B0068611A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "~/Library/QuickLook";
+			dstSubfolderSpec = 0;
+			files = (
+				5AF95FCD162104B30068611A /* QuickGo.qlgenerator in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5AEC4154161FFE460095F371 /* QuickGo.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickGo.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,10 +40,11 @@
 		5AEC415D161FFE460095F371 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		5AEC4161161FFE460095F371 /* QuickGo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuickGo-Info.plist"; sourceTree = "<group>"; };
 		5AEC4163161FFE460095F371 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5AEC4165161FFE460095F371 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
-		5AEC4167161FFE460095F371 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		5AEC4165161FFE460095F371 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		5AEC4167161FFE460095F371 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		5AEC4169161FFE460095F371 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		5AEC416B161FFE460095F371 /* QuickGo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuickGo-Prefix.pch"; sourceTree = "<group>"; };
+		5AF95FD41622A4880068611A /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +93,8 @@
 		5AEC415F161FFE460095F371 /* QuickGo */ = {
 			isa = PBXGroup;
 			children = (
-				5AEC4165161FFE460095F371 /* GenerateThumbnailForURL.c */,
-				5AEC4167161FFE460095F371 /* GeneratePreviewForURL.c */,
+				5AEC4165161FFE460095F371 /* GenerateThumbnailForURL.m */,
+				5AEC4167161FFE460095F371 /* GeneratePreviewForURL.m */,
 				5AEC4169161FFE460095F371 /* main.c */,
 				5AEC4160161FFE460095F371 /* Supporting Files */,
 			);
@@ -88,6 +104,7 @@
 		5AEC4160161FFE460095F371 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5AF95FD41622A4880068611A /* style.css */,
 				5AEC4161161FFE460095F371 /* QuickGo-Info.plist */,
 				5AEC4162161FFE460095F371 /* InfoPlist.strings */,
 				5AEC416B161FFE460095F371 /* QuickGo-Prefix.pch */,
@@ -117,6 +134,7 @@
 				5AEC4150161FFE460095F371 /* Headers */,
 				5AEC4151161FFE460095F371 /* Resources */,
 				5AEC4152161FFE460095F371 /* Rez */,
+				5AF95FCC1621049B0068611A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -159,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AEC4164161FFE460095F371 /* InfoPlist.strings in Resources */,
+				5AF95FD51622A4880068611A /* style.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,8 +198,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AEC4166161FFE460095F371 /* GenerateThumbnailForURL.c in Sources */,
-				5AEC4168161FFE460095F371 /* GeneratePreviewForURL.c in Sources */,
+				5AEC4166161FFE460095F371 /* GenerateThumbnailForURL.m in Sources */,
+				5AEC4168161FFE460095F371 /* GeneratePreviewForURL.m in Sources */,
 				5AEC416A161FFE460095F371 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +316,7 @@
 				5AEC4170161FFE460095F371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

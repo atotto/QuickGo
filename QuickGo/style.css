@@ -1,0 +1,30 @@
+
+body {
+    font-family: 'Tahoma';
+    font-size: 10px;
+}
+
+pre.code {
+    font-family: 'Monaco';
+    font-size: 12px;
+
+    background: #FCFCFA;
+    white-space: pre-wrap;
+    padding: 11px;
+    border-radius: 3px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+span.HighlightKeyword     { color:blue; }  /* break|default|func|interface|select|case|defer|go|map|struct|chan|else|goto|package|switch|const|fallthrough|if|range|type|continue|for|import|return|var */
+span.HighlightTypes       { color:blue; }  /* bool|byte|complex64|complex128|error|float32|float64|int|int8|int16|int32|int64|rune|string|uint|uint8|uint16|uint32|uint64|uintptr */
+span.HighlightConstants   { color:purple; }/* true|false|iota */
+span.HighlightZero        { color:blue; }  /* nil */
+span.HighlightFunction    { color:blue; }  /* append|cap|close|complex|copy|delete|imag|len|make|new|panic|print|println|real|recover */
+span.HighlightString      { color:orange; }/* "" */
+span.HighlightCharacter   { color:red; }   /* '' */
+span.HighlightURL         { color:blue; }  /* http.... */
+
+pre span.HighlightComment, pre span.HighlightComment span    { color:green !important;} /* // */
+pre span.HighlightDocComment, pre span.HighlightDocComment span  { color:green !important;} /* */
+
+

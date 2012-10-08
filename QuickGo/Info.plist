@@ -1,0 +1,31 @@
+<key>UTImportedTypeDeclarations</key>
+<array>
+  <dict>
+    <key>UTTypeIdentifier</key>
+    <string>atotto.QuickGo</string>
+    <key>UTTypeDescription</key>
+    <string>golang document</string>
+    <key>UTTypeConformsTo</key>
+    <array>
+      <string>public.go</string>
+    </array>
+    <key>UTTypeTagSpecification</key>
+    <dict>
+      <key>public.filename-extension</key>
+      <array>
+        <string>go</string>
+      </array>
+    </dict>
+  </dict>
+</array>    
+<key>CFBundleDocumentTypes</key>
+<array>
+  <dict>
+    <key>CFBundleTypeRole</key>
+    <string>QLGenerator</string>
+    <key>LSItemContentTypes</key>
+    <array>
+      <string>atotto.QuickGo</string>
+    </array>
+  </dict>
+</array>
