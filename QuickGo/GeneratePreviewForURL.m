@@ -118,8 +118,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
                          stringWithContentsOfFile:path
                          encoding:NSUTF8StringEncoding
                          error:&err];
-        NSLog(@"Load css from: %@",path);
-
+        
         NSMutableString *html = [[NSMutableString alloc] init];
         [html appendString:@"<html>"];
         [html appendString:@"<head>"];
@@ -136,9 +135,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         [html appendString:@"<p>This source code is <a href=\"http://golang.org/\">The Go Programming Language</a>.</p>"];
         
         [html appendString:@"</body></html>"];
-        
-        [html writeToFile:@"/tmp/debug.html" atomically:YES encoding:NSUTF8StringEncoding error:nil];
-        
+                
         QLPreviewRequestSetDataRepresentation(preview,(__bridge CFDataRef)[html dataUsingEncoding:NSUTF8StringEncoding],kUTTypeHTML,NULL);
     }
     
