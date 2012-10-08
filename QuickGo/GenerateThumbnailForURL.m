@@ -1,3 +1,11 @@
+//
+//  GoSyntaxHighlighter.h
+//  QuickGo
+//
+//  Created by Ato ARAKI on 2012/10/08.
+//  Copyright (c) 2012 Ato ARAKI. All rights reserved.
+//
+
 #include <CoreFoundation/CoreFoundation.h>
 #include <CoreServices/CoreServices.h>
 #include <QuickLook/QuickLook.h>

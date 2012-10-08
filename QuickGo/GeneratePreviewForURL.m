@@ -1,3 +1,11 @@
+//
+//  GoSyntaxHighlighter.h
+//  QuickGo
+//
+//  Created by Ato ARAKI on 2012/10/08.
+//  Copyright (c) 2012 Ato ARAKI. All rights reserved.
+//
+
 #include <CoreFoundation/CoreFoundation.h>
 #include <CoreServices/CoreServices.h>
 #include <QuickLook/QuickLook.h>
@@ -51,7 +59,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
                                            nil
                                            ];
         
-        NSDictionary *htmlEscape = [NSDictionary dictionaryWithObjectsAndKeys:
+        NSDictionary *htmlEscapeDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
                                            @"&amp;", @"&",
                                            @"&lt;", @"<",
                                            @"&gt;", @">",
@@ -63,7 +71,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         
         NSString* escaped = source.copy;
         
-        for(NSString* key in htmlEscape) {            
+        for(NSString* key in htmlEscapeDictionary) {            
             NSRange range = NSMakeRange(0,[escaped length]);
             
             NSRegularExpression *regexp = [NSRegularExpression
@@ -76,7 +84,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
                              stringByReplacingMatchesInString:escaped
                              options:NSMatchingReportProgress
                              range:range
-                             withTemplate:[htmlEscape objectForKey:key]
+                             withTemplate:[htmlEscapeDictionary objectForKey:key]
                              ];
             
             escaped = tmp.copy;
