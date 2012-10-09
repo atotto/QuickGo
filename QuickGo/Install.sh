@@ -10,5 +10,5 @@ if [ ! -d ~/Library/QuickLook/ ]
 then
     mkdir -p ~/Library/QuickLook/
 fi
-cp -r QuickGo.qlgenerator* ~/Library/QuickLook/
+cp -r QuickGo.qlgenerator ~/Library/QuickLook/
 /usr/bin/qlmanage -r
