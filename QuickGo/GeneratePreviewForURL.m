@@ -140,7 +140,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         [html appendString:@"<pre class=\"code\">"];
         [html appendString:coloredString];
         [html appendString:@"</pre>"];
-        [html appendString:@"<p>This source code is <a href=\"http://golang.org/\">The Go Programming Language</a>.</p>"];
+        [html appendString:@"<p><a href=\"http://golang.org/\">http://golang.org</a></p>"];
         
         [html appendString:@"</body></html>"];
                 
