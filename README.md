@@ -2,12 +2,8 @@
 
 ## Introduction ##
 
-This is QuickLook Plug-in for golang. You can get a go source code using QuickLook.
-
-QuickLook description is here: 
-
-- <http://en.wikipedia.org/wiki/Quick_Look>
-- <http://ja.wikipedia.org/wiki/Quick_Look>
+QuickGo is a useful QuickLook plugin to preview golang files.
+It will render files with a colorful view.
 
 
 ### ScreenShot ###
